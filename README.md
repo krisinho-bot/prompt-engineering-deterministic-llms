@@ -312,6 +312,70 @@ If confidence < 0.7, include "uncertain": true and explain why.
 
 ---
 
+## Trending Approaches (2025-2026)
+
+### Context Engineering — The Successor to Prompt Engineering
+
+The most significant paradigm shift in 2026 is the migration from **prompt engineering** to **context engineering**.
+
+The term crystallized in mid-2025 when **Shopify CEO Tobi Lütke** and **former OpenAI researcher Andrej Karpathy** publicly endorsed the concept, describing it as the art of providing all the information a task needs to be plausibly solvable by the LLM.
+
+**Karpathy's analogy:** The LLM is a CPU, and its context window is RAM. Context engineering is about managing everything in that working memory — system instructions, retrieved documents, conversation history, tool definitions, user preferences, and state information.
+
+**Key differences:**
+
+| Prompt Engineering | Context Engineering |
+|---|---|
+| Optimize the instruction | Optimize the entire information environment |
+| Single prompt focus | System-level design |
+| Manual crafting | Retrieval pipelines, memory management, dynamic assembly |
+| Chat interface | Production architecture |
+
+Gartner formally defines context engineering as designing and structuring the relevant data, workflows, and environment so AI systems can understand intent and deliver aligned outcomes without relying on manual prompts. Organizations investing in context architectures report **50% improvement in response times** and **40% higher-quality outputs**.
+
+Prompt engineering is now a **subset** of context engineering — it's what you do inside the context window, while context engineering determines what fills that window and why.
+
+Sources:
+- [Karpathy on Context Engineering](https://twitter.com/karpathy)
+- [Gartner: Context Engineering (Oct 2025)](https://www.gartner.com)
+- [AI and Prompt Engineering Trends 2026 — PromptBestie](https://promptbestie.com/en/ai-prompt-engineering-trends-2026-definitive-guide/)
+
+---
+
+### "Grill Me" Skill — Stress-Testing Plans via Relentless Questioning
+
+A prompt pattern that went viral in 2025-2026, created by **Matt (tkersey)**. Instead of executing a task directly, the model **interrogates the user relentlessly** about their plan or design until both reach shared understanding.
+
+**How it works:**
+1. User presents a plan or design
+2. Model researches the codebase/context first
+3. Model asks judgment-based questions, walking through the decision tree branch-by-branch
+4. Each branch is resolved before moving to the next
+5. Output: a concrete problem statement with measurable success criteria
+
+**When to use:**
+- Stress-testing a design before implementation
+- Validating architectural decisions
+- Getting clarity on ambiguous requirements
+- Design reviews
+
+**The controversy:** On Hacker News, critics pointed out that most of the effect can be achieved by simply saying "be critical" or "challenge my assumptions." The elaborate jargon ("walk down the design tree") may not meaningfully change LLM behavior compared to simple instructions.
+
+**Simplified version that works similarly:**
+```
+Before implementing my plan, interrogate me about it.
+Challenge every assumption. Ask about edge cases I haven't considered.
+Don't proceed until we've resolved all ambiguities.
+```
+
+Sources:
+- [Grill Me Skill — Skills Playground](https://skillsplayground.com/skills/tkersey-dotfiles-grill-me/)
+- [Grill Me — Nexscope SkillHub](https://www.nexscope.ai/skillhub/skill/grill-me)
+- [Hacker News Discussion](https://news.ycombinator.com/item?id=47550391)
+- [LinkedIn: Matt's 90-Minute LLM Session](https://www.linkedin.com/posts/andrei-taranchenko-8b139771_full-walkthrough-workflow-for-ai-coding-activity-7455602642229039104-_rku)
+
+---
+
 ## Tools & Frameworks
 
 | Tool | Purpose | Link |
